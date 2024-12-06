@@ -9,7 +9,7 @@ function FormPreview({ form }) {
 
   const submitForm = async () => {
     try {
-      const response = await fetch(`http://localhost:8932/api/forms/${form._id}/responses`, {
+      const response = await fetch(`https://form-builder1.onrender.com/api/forms/${form._id}/responses`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

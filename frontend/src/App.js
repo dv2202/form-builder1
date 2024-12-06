@@ -15,7 +15,7 @@ function App() {
 
   const fetchForms = async () => {
     try {
-      const response = await fetch(`http://localhost:8932/api/forms`);
+      const response = await fetch(`https://form-builder1.onrender.com/api/forms`);
       const data = await response.json();
       setForms(data);
     } catch (error) {
@@ -25,7 +25,7 @@ function App() {
 
   const handleFormSave = async (form) => {
     try {
-      const response = await fetch(`http://localhost:8932/api/forms`, {
+      const response = await fetch(`https://form-builder1.onrender.com/api/forms`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
